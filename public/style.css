@@ -194,6 +194,15 @@ h2 {
     }
 }
 
+.logo-btns{
+    width: 6rem;
+    border-radius: 0.5rem;
+
+    @media (min-width: 768px) {
+        width: 10rem;
+    }
+}
+
 /* .timeline-programma {
     display: flex;
 } */
