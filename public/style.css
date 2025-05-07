@@ -103,7 +103,7 @@ h2 {
 }
 
 h3 {
-    text-align: var(--font-position);
+
 }
 
 p {
@@ -248,7 +248,7 @@ h2 {
     }
 }
 
-.show {
+/* .show {
     background-color: var( --secondary-bg-color);
     display: flex;
     position: relative;
@@ -258,13 +258,36 @@ h2 {
     padding: var(--padding-m);
     gap: 0.5rem;
     flex-shrink: 0;
+} */
+
+
+.show {
+    background-color: var( --secondary-bg-color);
+    display: grid;
+    grid-template-columns: 8rem 15rem;
+    grid-template-rows: 1rem 6rem 2rem;
+    grid-template-areas: "img title" "img text" "img btn" ;
+    position: relative;
+    flex-direction: column;
+    border-radius: var(--border-radius-m);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.397);
+    /* padding: var(--padding-m); */
+    /* gap: 0.5rem; */
+    flex-shrink: 0;
+}
+
+.dj-img{
+    grid-area: img;
+    height: 100%;
 }
 
 h3 {
+    grid-area: title;
     margin: 0;
 }
 
 dl {
+    grid-area: text;
     display: grid;
     grid-template-columns: 1rem auto;
     gap: 0.5rem;
@@ -286,6 +309,12 @@ dd {
     gap: 1rem;
     align-items: center;
 } */
+
+.show-btns {
+    grid-area: btn;
+    display: flex;
+    gap: 0.6rem;
+}
 
 .like-btn, .more-btn {
     background-color: var(--highlight-color);
