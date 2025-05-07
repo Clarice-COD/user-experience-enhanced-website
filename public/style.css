@@ -7,6 +7,7 @@ body {
     /* COLOR */
     --primary-text-color: #1E1E1E;
     --secondary-text-color: #FFFFFF;
+    --tertiary-text-color: #8B8B8B;
     --highlight-color: #FE0170;
     --secundairy-highlight-color: #0091FF;
     --primary-bg-color: #011564;
@@ -309,6 +310,7 @@ dl {
     position: relative;
     left: -3rem;
     margin: 0;
+    color: var(--tertiary-text-color);
 }
 
 dt {
